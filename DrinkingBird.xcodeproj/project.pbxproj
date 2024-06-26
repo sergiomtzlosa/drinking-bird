@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD040CADB9F34099DE01F09 /* BirdScene3DBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB117A2D0170ABB76D04B76 /* BirdScene3DBuilder.swift */; };
+		15714EA42898B81A1664AAA7 /* MechanicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CD0560EF80E02DA1AE68A /* MechanicsModel.swift */; };
+		19D8991C0CFB2CF43F602C0C /* BirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914B17D5F375B30AC66FCB /* BirdViewModel.swift */; };
+		215EF79C3EA96C9DC79AD6A6 /* PhysicsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C930CC97E1B8557BA030FF7B /* PhysicsState.swift */; };
+		222B57579CACEA063C3BA7C0 /* BirdGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC171D6B3C7E76E10206A3 /* BirdGeometry.swift */; };
+		22E674D6A649521B76841BB9 /* FluidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD531D8404EE7A72AC3122 /* FluidModel.swift */; };
+		24C5F6C14C86CFAAEF7F5017 /* CycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE8A240F72BB55594D23F /* CycleTests.swift */; };
+		28C750A081C05FC7AAB1F1F3 /* SimulationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B9CA2E01973E27CF5A4EF /* SimulationEngine.swift */; };
+		7FD90D396990CBE1F6694C96 /* InstrumentPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30621BDBC33BB9E2785F069C /* InstrumentPanel.swift */; };
+		9292FA491EF38E3F0BF17112 /* TransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD7F1788A02799A5B789CF /* TransportTests.swift */; };
+		972AF39D2F03F92A825416EC /* DrinkingBirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0CDE74CF30C965196881F9 /* DrinkingBirdApp.swift */; };
+		A4F283A16426E761C3479AA1 /* BirdScene3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85361BA46552D75D2ACA13C6 /* BirdScene3DView.swift */; };
+		A6CDD267C8834C089C185FE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B571AF3B8E3A48D01F64C /* ContentView.swift */; };
+		C0397FC646299BCE4D4986B7 /* SimFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34F05FBB7712B8FE46FEE7 /* SimFormat.swift */; };
+		CA1DAA25764305600771B1AB /* ThermodynamicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00BED8E8FCBD35A70D42C8 /* ThermodynamicsModel.swift */; };
+		F938F7CC337345CAED08CCDE /* Dials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC984387C9B9C83BCB34AD /* Dials.swift */; };
+		FADB84D1E562BB05B0F26976 /* InstrumentPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31E27BFA073E563A09FF0B /* InstrumentPanelViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		163B62EAF22F8A45DAEF5867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5F812EF5A6C8D88F3A07B57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF2D3619201609A56A960A9;
+			remoteInfo = DrinkingBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F9A3033CAD2BD044E657C6 /* DrinkingBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkingBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCD531D8404EE7A72AC3122 /* FluidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidModel.swift; sourceTree = "<group>"; };
+		196B9CA2E01973E27CF5A4EF /* SimulationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationEngine.swift; sourceTree = "<group>"; };
+		1C0CDE74CF30C965196881F9 /* DrinkingBirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkingBirdApp.swift; sourceTree = "<group>"; };
+		23AC171D6B3C7E76E10206A3 /* BirdGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGeometry.swift; sourceTree = "<group>"; };
+		30621BDBC33BB9E2785F069C /* InstrumentPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentPanel.swift; sourceTree = "<group>"; };
+		39CD7F1788A02799A5B789CF /* TransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTests.swift; sourceTree = "<group>"; };
+		42AC74C042453A0F0392DF67 /* DrinkingBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkingBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B31E27BFA073E563A09FF0B /* InstrumentPanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentPanelViewModel.swift; sourceTree = "<group>"; };
+		5B914B17D5F375B30AC66FCB /* BirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdViewModel.swift; sourceTree = "<group>"; };
+		5CCC984387C9B9C83BCB34AD /* Dials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dials.swift; sourceTree = "<group>"; };
+		7A2B571AF3B8E3A48D01F64C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85361BA46552D75D2ACA13C6 /* BirdScene3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdScene3DView.swift; sourceTree = "<group>"; };
+		8FB117A2D0170ABB76D04B76 /* BirdScene3DBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdScene3DBuilder.swift; sourceTree = "<group>"; };
+		AAFFE8A240F72BB55594D23F /* CycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleTests.swift; sourceTree = "<group>"; };
+		AC00BED8E8FCBD35A70D42C8 /* ThermodynamicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermodynamicsModel.swift; sourceTree = "<group>"; };
+		B40CD0560EF80E02DA1AE68A /* MechanicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicsModel.swift; sourceTree = "<group>"; };
+		C930CC97E1B8557BA030FF7B /* PhysicsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsState.swift; sourceTree = "<group>"; };
+		ED34F05FBB7712B8FE46FEE7 /* SimFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimFormat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F61B7D0C3934B2ADB56DCF4 /* DrinkingBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE8A240F72BB55594D23F /* CycleTests.swift */,
+				39CD7F1788A02799A5B789CF /* TransportTests.swift */,
+			);
+			path = DrinkingBirdTests;
+			sourceTree = "<group>";
+		};
+		293BBDFC6EF5156D9AC71764 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FB117A2D0170ABB76D04B76 /* BirdScene3DBuilder.swift */,
+				85361BA46552D75D2ACA13C6 /* BirdScene3DView.swift */,
+				30621BDBC33BB9E2785F069C /* InstrumentPanel.swift */,
+				ED34F05FBB7712B8FE46FEE7 /* SimFormat.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E7A4A8C57638B58E711A5DC /* DrinkingBird */ = {
+			isa = PBXGroup;
+			children = (
+				1C0CDE74CF30C965196881F9 /* DrinkingBirdApp.swift */,
+				DC93E72D292090DB4989141D /* App */,
+				539CF2AFCFDE37E1949E4289 /* Domain */,
+				D61011323086417791A142C8 /* ViewModels */,
+				293BBDFC6EF5156D9AC71764 /* Views */,
+			);
+			path = DrinkingBird;
+			sourceTree = "<group>";
+		};
+		539CF2AFCFDE37E1949E4289 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				23AC171D6B3C7E76E10206A3 /* BirdGeometry.swift */,
+				5CCC984387C9B9C83BCB34AD /* Dials.swift */,
+				0CCD531D8404EE7A72AC3122 /* FluidModel.swift */,
+				B40CD0560EF80E02DA1AE68A /* MechanicsModel.swift */,
+				C930CC97E1B8557BA030FF7B /* PhysicsState.swift */,
+				196B9CA2E01973E27CF5A4EF /* SimulationEngine.swift */,
+				AC00BED8E8FCBD35A70D42C8 /* ThermodynamicsModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6D2261B406D1F8FE5C2F8BA8 = {
+			isa = PBXGroup;
+			children = (
+				2E7A4A8C57638B58E711A5DC /* DrinkingBird */,
+				1F61B7D0C3934B2ADB56DCF4 /* DrinkingBirdTests */,
+				B7970CA00F0E0DE9B3366EE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7970CA00F0E0DE9B3366EE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42AC74C042453A0F0392DF67 /* DrinkingBird.app */,
+				07F9A3033CAD2BD044E657C6 /* DrinkingBirdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61011323086417791A142C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B914B17D5F375B30AC66FCB /* BirdViewModel.swift */,
+				5B31E27BFA073E563A09FF0B /* InstrumentPanelViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DC93E72D292090DB4989141D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B571AF3B8E3A48D01F64C /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F69AD066779EAF02829BED6 /* DrinkingBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147ED9DA54D0C4C3FE2CA8F3 /* Build configuration list for PBXNativeTarget "DrinkingBirdTests" */;
+			buildPhases = (
+				A707EAD9D0409C1D0180FE20 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3DD3D0132471671AA69B0FF /* PBXTargetDependency */,
+			);
+			name = DrinkingBirdTests;
+			packageProductDependencies = (
+			);
+			productName = DrinkingBirdTests;
+			productReference = 07F9A3033CAD2BD044E657C6 /* DrinkingBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EF2D3619201609A56A960A9 /* DrinkingBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0D5D47691D4FA8986A6FCF /* Build configuration list for PBXNativeTarget "DrinkingBird" */;
+			buildPhases = (
+				86431D07D631A82FE4966336 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrinkingBird;
+			packageProductDependencies = (
+			);
+			productName = DrinkingBird;
+			productReference = 42AC74C042453A0F0392DF67 /* DrinkingBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5F812EF5A6C8D88F3A07B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 81EE8545BBDEEF8E1033B5BE /* Build configuration list for PBXProject "DrinkingBird" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6D2261B406D1F8FE5C2F8BA8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B7970CA00F0E0DE9B3366EE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EF2D3619201609A56A960A9 /* DrinkingBird */,
+				3F69AD066779EAF02829BED6 /* DrinkingBirdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86431D07D631A82FE4966336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222B57579CACEA063C3BA7C0 /* BirdGeometry.swift in Sources */,
+				0AD040CADB9F34099DE01F09 /* BirdScene3DBuilder.swift in Sources */,
+				A4F283A16426E761C3479AA1 /* BirdScene3DView.swift in Sources */,
+				19D8991C0CFB2CF43F602C0C /* BirdViewModel.swift in Sources */,
+				A6CDD267C8834C089C185FE5 /* ContentView.swift in Sources */,
+				F938F7CC337345CAED08CCDE /* Dials.swift in Sources */,
+				972AF39D2F03F92A825416EC /* DrinkingBirdApp.swift in Sources */,
+				22E674D6A649521B76841BB9 /* FluidModel.swift in Sources */,
+				7FD90D396990CBE1F6694C96 /* InstrumentPanel.swift in Sources */,
+				FADB84D1E562BB05B0F26976 /* InstrumentPanelViewModel.swift in Sources */,
+				15714EA42898B81A1664AAA7 /* MechanicsModel.swift in Sources */,
+				215EF79C3EA96C9DC79AD6A6 /* PhysicsState.swift in Sources */,
+				C0397FC646299BCE4D4986B7 /* SimFormat.swift in Sources */,
+				28C750A081C05FC7AAB1F1F3 /* SimulationEngine.swift in Sources */,
+				CA1DAA25764305600771B1AB /* ThermodynamicsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A707EAD9D0409C1D0180FE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C5F6C14C86CFAAEF7F5017 /* CycleTests.swift in Sources */,
+				9292FA491EF38E3F0BF17112 /* TransportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3DD3D0132471671AA69B0FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF2D3619201609A56A960A9 /* DrinkingBird */;
+			targetProxy = 163B62EAF22F8A45DAEF5867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31FD9CBB98662B9FBCE84D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		490BC9C1F8488ABFA0F398ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		82937DDC0C74EA96FDA23919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBirdTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinkingBird.app/Contents/MacOS/DrinkingBird";
+			};
+			name = Debug;
+		};
+		84087676AA3EE5420F4B16DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBirdTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinkingBird.app/Contents/MacOS/DrinkingBird";
+			};
+			name = Release;
+		};
+		88B4ACEA9769D50549FC81B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drinking Bird";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBird;
+				PRODUCT_NAME = DrinkingBird;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF279474A4E39B0C2BA6C8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drinking Bird";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBird;
+				PRODUCT_NAME = DrinkingBird;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147ED9DA54D0C4C3FE2CA8F3 /* Build configuration list for PBXNativeTarget "DrinkingBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82937DDC0C74EA96FDA23919 /* Debug */,
+				84087676AA3EE5420F4B16DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81EE8545BBDEEF8E1033B5BE /* Build configuration list for PBXProject "DrinkingBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD9CBB98662B9FBCE84D63 /* Debug */,
+				490BC9C1F8488ABFA0F398ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA0D5D47691D4FA8986A6FCF /* Build configuration list for PBXNativeTarget "DrinkingBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B4ACEA9769D50549FC81B4 /* Debug */,
+				AF279474A4E39B0C2BA6C8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5F812EF5A6C8D88F3A07B57 /* Project object */;
+}

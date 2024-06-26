@@ -1,0 +1,50 @@
+name: DrinkingBird
+options:
+  bundleIdPrefix: com.sid.drinkingbird
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    GENERATE_INFOPLIST_FILE: YES
+
+targets:
+  DrinkingBird:
+    type: application
+    platform: macOS
+    sources:
+      - DrinkingBird
+    settings:
+      base:
+        PRODUCT_NAME: DrinkingBird
+        INFOPLIST_KEY_CFBundleDisplayName: Drinking Bird
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+
+  DrinkingBirdTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - DrinkingBirdTests
+    dependencies:
+      - target: DrinkingBird
+    settings:
+      base:
+        TEST_HOST: $(BUILT_PRODUCTS_DIR)/DrinkingBird.app/Contents/MacOS/DrinkingBird
+        BUNDLE_LOADER: $(TEST_HOST)
+
+schemes:
+  DrinkingBird:
+    build:
+      targets:
+        DrinkingBird: all
+        DrinkingBirdTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - DrinkingBirdTests

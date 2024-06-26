@@ -1,0 +1,13 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcresult
+
+# SwiftPM
+.build/
+Packages/UATests/
+
+# macOS
+.DS_Store
+AGENTS.md
