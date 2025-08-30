@@ -19,10 +19,10 @@ targets:
     settings:
       base:
         PRODUCT_NAME: DrinkingBird
-        INFOPLIST_KEY_CFBundleDisplayName: Drinking Bird
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: DrinkingBird/Info.plist
         ENABLE_APP_SANDBOX: YES
         ENABLE_HARDENED_RUNTIME: YES
-        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
 
   DrinkingBirdTests:
     type: bundle.unit-test

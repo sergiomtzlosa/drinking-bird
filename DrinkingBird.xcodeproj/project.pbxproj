@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1B2C3D4E5F60718293A4B5C /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5D /* AppIcon.icns */; };
 		0AD040CADB9F34099DE01F09 /* BirdScene3DBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB117A2D0170ABB76D04B76 /* BirdScene3DBuilder.swift */; };
 		15714EA42898B81A1664AAA7 /* MechanicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40CD0560EF80E02DA1AE68A /* MechanicsModel.swift */; };
 		19D8991C0CFB2CF43F602C0C /* BirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914B17D5F375B30AC66FCB /* BirdViewModel.swift */; };
@@ -37,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1B2C3D4E5F60718293A4B5D /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		07F9A3033CAD2BD044E657C6 /* DrinkingBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkingBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCD531D8404EE7A72AC3122 /* FluidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidModel.swift; sourceTree = "<group>"; };
 		196B9CA2E01973E27CF5A4EF /* SimulationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationEngine.swift; sourceTree = "<group>"; };
 		1C0CDE74CF30C965196881F9 /* DrinkingBirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkingBirdApp.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23AC171D6B3C7E76E10206A3 /* BirdGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdGeometry.swift; sourceTree = "<group>"; };
 		30621BDBC33BB9E2785F069C /* InstrumentPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentPanel.swift; sourceTree = "<group>"; };
 		39CD7F1788A02799A5B789CF /* TransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTests.swift; sourceTree = "<group>"; };
@@ -83,12 +86,22 @@
 			isa = PBXGroup;
 			children = (
 				1C0CDE74CF30C965196881F9 /* DrinkingBirdApp.swift */,
+				A1B2C3D4E5F60718293A4B60 /* Info.plist */,
 				DC93E72D292090DB4989141D /* App */,
 				539CF2AFCFDE37E1949E4289 /* Domain */,
 				D61011323086417791A142C8 /* ViewModels */,
 				293BBDFC6EF5156D9AC71764 /* Views */,
+				A1B2C3D4E5F60718293A4B5E /* Resources */,
 			);
 			path = DrinkingBird;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60718293A4B5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60718293A4B5D /* AppIcon.icns */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		539CF2AFCFDE37E1949E4289 /* Domain */ = {
@@ -166,6 +179,7 @@
 			buildConfigurationList = CA0D5D47691D4FA8986A6FCF /* Build configuration list for PBXNativeTarget "DrinkingBird" */;
 			buildPhases = (
 				86431D07D631A82FE4966336 /* Sources */,
+				A1B2C3D4E5F60718293A4B5F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +199,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 2710;
 			};
 			buildConfigurationList = 81EE8545BBDEEF8E1033B5BE /* Build configuration list for PBXProject "DrinkingBird" */;
 			developmentRegion = en;
@@ -208,6 +220,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D4E5F60718293A4B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60718293A4B5C /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86431D07D631A82FE4966336 /* Sources */ = {
@@ -286,9 +309,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -310,6 +335,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
@@ -350,9 +376,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -367,6 +395,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
@@ -378,11 +407,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBirdTests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinkingBird.app/Contents/MacOS/DrinkingBird";
@@ -394,11 +425,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBirdTests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinkingBird.app/Contents/MacOS/DrinkingBird";
@@ -408,16 +441,17 @@
 		88B4ACEA9769D50549FC81B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Drinking Bird";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DrinkingBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBird;
 				PRODUCT_NAME = DrinkingBird;
 				SDKROOT = macosx;
@@ -427,16 +461,17 @@
 		AF279474A4E39B0C2BA6C8FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Drinking Bird";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DrinkingBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sid.drinkingbird.DrinkingBird;
 				PRODUCT_NAME = DrinkingBird;
 				SDKROOT = macosx;
